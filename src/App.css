@@ -1,40 +1,125 @@
 
-
-.App {
-  text-align: center;
+.stylesMenu {
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #20232a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.styleImgDiv{
+    align-items: center;
+    display: flex;
+    width: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.styleUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.styleLi {
+    margin: 0 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: 0.4s ease 0s;
+}
+
+.styleLiOne {
+  margin: 0 10px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  transition: 0.4s ease 0s;
+}
+
+.styleLiOne:hover {
+    background-color: rgba(255, 255, 255, 0.041);
+    border-radius: 5px;
+}
+
+.aStyle {
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 0;
+    transition: 0.4s ease 0s;
+}
+
+.aStyle:hover{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+    background-color: #61dafb;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: #20232a;
+    text-decoration: none;
+    transition: 0.4s ease 0s;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login:hover{
+  background-color: #32bde4;
+  padding: 6px 15px;
+  border-radius: 3px;
+  color: #20232a;
+  text-decoration: none;
+}
+
+.register {
+   
+    border: 1px solid #61dafb;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.register:hover{
+  border: 1px solid #61dafb;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: #61dafb;
+    text-decoration: none;
+}
+
+
+.hoverLi:hover{
+    background-color: rgba(255, 255, 255, 0.041);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.search{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border:rgba(255, 255, 255, 0.1);
+    transition: 0.4s ease 0s;
+    padding: 0 10px;
+    color: #61dafb;
+    height: 34px;
+    margin-left: 25px;
+   
+}
+.search::placeholder{
+    color: rgba(255, 255, 255, 0.514);
+}
+
+
+.search:focus{
+    outline: none;
+    --saf-0: #61dafb;
+    box-shadow: 0 0 0 1px var(--saf-0),0 0 0 5px #61dafb52;
+    border-radius: 4px;
+    border-color: transparent;
+    -webkit-appearance: none;
 }

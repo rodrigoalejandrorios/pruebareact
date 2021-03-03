@@ -1,10 +1,7 @@
 const number = {name:'Rodrigo', lastname:'Rios'}
 const {name} = number
 const spread = `Hola bienvenido ${name}`
-
-decir = () =>{
-    console.log("hola")
-}
+const 
 
 const persona = {
     nombre: "Pablo",
