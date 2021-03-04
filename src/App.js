@@ -1,10 +1,10 @@
-import NavBar from './Components/Nav';
-
-
+import NavBar from "./Components/Nav";
+import ResultSearch from "./Components/Result";
 function App() {
   return (
     <>
-      <NavBar/>
+      <NavBar />
+      <ResultSearch />
     </>
   );
 }
