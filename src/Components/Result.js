@@ -1,38 +1,12 @@
-import React, { useState } from "react";
-import { TextField } from "@material-ui/core";
+import React from "react";
 
-const name = [
-  "Siri",
-  "Alexa",
-  "Google",
-  "Facebook",
-  "Twitter",
-  "Linkedin",
-  "Sinkedin",
-];
-
-const ResultSearch = () => {
-  const [search, setSearch] = useState("");
-
-  const handleChange = (e) => {
-    setSearch(e.target.value);
-  };
+const ResultSearch = ({ searchCon }) => {
   return (
     <>
-      <div>
-        <TextField
-          style={{ margin: "40px 0 0 20px" }}
-          type="search"
-          id="outlined-basic"
-          variant="outlined"
-          label="Escribe"
-          value={search}
-          onChange={handleChange}
-        />
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <h1>Bienvenidos a nuestro Store</h1>
       </div>
-      <div>
-        <h1>{search}</h1>
-      </div>
+      <div>{searchCon ? <h1> Resultados de {searchCon}</h1> : ""}</div>
     </>
   );
 };
